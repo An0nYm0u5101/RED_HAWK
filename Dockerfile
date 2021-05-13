@@ -1,4 +1,4 @@
-FROM php:7.4-cli
+FROM php:7.3.27-cli
 RUN apt-get update && apt-get install -y git
 RUN git clone https://github.com/Tuhinshubhra/RED_HAWK && cp -r RED_HAWK /usr/src/redhawk
 WORKDIR /usr/src/redhawk
